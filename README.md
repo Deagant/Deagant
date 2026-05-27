@@ -1,8 +1,9 @@
 # Rémy Miquel — Cybersécurité junior · Stage 350h dès septembre 2026
 
-En formation **Fullstack Cybersécurité chez Jedha** (RNCP niveau 6 — Administrateur d'infrastructures sécurisées), je prépare un profil orienté sécurité systèmes/réseaux, SOC junior ou pentest encadré.
+En formation **Fullstack Cybersécurité chez Jedha** (RNCP niveau 6 — Administrateur d'infrastructures sécurisées),
+je me forme en sécurité offensive et défensive en lab — pentest, analyse phishing, durcissement système.
 
-Je documente ici mes projets pratiques issus de labs autorisés, d'exercices de formation et de plateformes d'entraînement.
+Je documente ici mes exercices pratiques issus de labs autorisés, de la formation et de plateformes d'entraînement.
 
 ---
 
@@ -43,24 +44,21 @@ Programme : sécurité systèmes/réseaux, pentest web et infrastructure, protoc
 ### Sécurité offensive en lab
 
 - Reconnaissance · Énumération
-- Exploitation web contrôlée (SQLi, XSS stockée)
-- Brute force encadré
+- Exploitation web contrôlée (SQLi, XSS réfléchie, SSTI)
+- Brute force encadré (SSH, Hydra)
 - Élévation de privilèges Linux — SUID, cron, sudoers, CVE-2021-3156
-- Post-exploitation en lab autorisé
 - Rédaction de rapport (PTES, OWASP, CVSS 3.1)
 
 ### Sécurité défensive
 
 - Analyse de logs Apache — détection XSS, SQLi, Path Traversal, brute-force
-- Analyse phishing — headers, IP, SPF/DKIM/DMARC, artefacts
+- Analyse phishing — headers, IP d'origine, artefacts, verdict
 - Durcissement PostgreSQL — rôles, privilèges, moindre privilège
 
 ### Outils
 
 - Nmap · Nikto · Burp Suite
-- Hydra · GTFOBins
-- SSH · SCP · outils Linux
-- Recherche CVE · documentation
+- Hydra · SSH · SCP
 - Python (scripts d'analyse)
 - Git · GitHub
 
@@ -71,12 +69,11 @@ Programme : sécurité systèmes/réseaux, pentest web et infrastructure, protoc
 | Projet | Description | Compétences |
 |---|---|---|
 | [Rapport de pentest lab](https://github.com/Deagant/pentest-lab-report-portfolio) | Audit lab EvilCorp — 10 vulnérabilités, équipe de 4, mai 2026. SQLi, XSS stockée, FTP, brute force SSH, PrivEsc Linux, CVE-2021-3156. | Reconnaissance, exploitation, privesc, rapport PTES/CVSS |
-| [Phishing Analysis Lab](https://github.com/Deagant/phishing-analysis-lab) | Analyse d'emails suspects — headers, IP d'origine, SPF/DKIM/DMARC, artefacts, verdict. | Analyse d'incidents, Blue Team, headers email |
+| [Phishing Analysis Lab](https://github.com/Deagant/phishing-analysis-lab) | Analyse d'emails suspects — headers, IP d'origine, artefacts, verdict. Simulation de campagne GoPhish. | Analyse d'incidents, Blue Team, phishing |
 | [PostgreSQL Security Hardening](https://github.com/Deagant/postgres-security-hardening) | Correction de droits excessifs — rôles, privilèges, moindre privilège, chiffrement. | Sécurité BDD, durcissement, documentation |
 | [Web Vulnerabilities Labs](https://github.com/Deagant/web-vulnerabilities-labs) | Fiches XSS réfléchie, SSTI, SQLi, Command Injection — mécanisme, impact, remédiation. | Sécurité web, analyse applicative |
 | [Linux PrivEsc Notes](https://github.com/Deagant/linux-privesc-notes) | Notes SUID, sudo, cron, permissions — erreurs de config et durcissement associé. | Sécurité système Linux |
 | [Blue Team Tools](https://github.com/Deagant/blue-team-tools) | Analyseur de logs Apache en Python — détection XSS, SQLi, Path Traversal, brute-force. | Python, Blue Team, détection d'attaques |
-| [OSINT CTF Methodology](https://github.com/Deagant/osint-ctf-methodology) | Méthodologie personnelle OSINT — outils, géolocalisation, image, documentation. | Investigation, raisonnement, documentation |
 
 ---
 
